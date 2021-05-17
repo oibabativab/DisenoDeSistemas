@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!-- Template by html.am -->
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles2.css">
+    <script src="bootstrap.js"></script>
+
+    <script src="https://use.fontawesome.com/5e6063fdf0.js"></script>
+
+    <title>Dise&nacute;o de Sistemas</title>
+</head>
+
+<body>
+    <!-- Bootstrap NavBar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary text-center">
+
+        <a class="navbar-brand bg-secondary" href="#">
+            <img src="https://www.unad.edu.co/images/footer/unad-logo-40_2jpg.jpg" width="129" height="auto"
+                class="d-inline-block align-top" alt="">
+            <span class="menu-collapsed">Sistema de apoyo para la gesti&oacute;n de colegios</span>
+        </a>
+
+    </nav><!-- NavBar END -->
+    <!-- Bootstrap row -->
+    <div class="row" id="body-row">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="sidebar-expanded d-none d-md-block" style="background-color: #485C8A;">
+            <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+            <!-- Bootstrap List Group -->
+            <ul class="list-group" style="background-color: #485C8A;">
+                <!-- Separator with title -->
+                <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                </li>
+                <!-- /END Separator -->
+                <!-- Menu with submenu -->
+                <a href="#submenu1" data-toggle="collapse" aria-expanded="false"
+                    class="list-group-item list-group-item-action flex-column align-items-start"
+                    style="background-color: #485C8A;color: white;">
+                    <div class="d-flex justify-content-start" >
+                        <span class="fa fa-graduation-cap fa-fw mr-2"></span>
+                        <span class="menu-collapsed">Gesti&oacute;n acad&eacute;mica</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu1' class="collapse sidebar-submenu" style="background-color: #D7D7D7; color: black;">
+                    <a href="#" class="list-group-item list-group-item-action" style="color: black;"
+                    onMouseOver="this.style.background='#CE7F60'">
+                        <span class="menu-collapsed">Registro de estudiantes</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" style="color: black;">
+                        <span class="menu-collapsed">Reporte de notas</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" style="color: black;">
+                        <span class="menu-collapsed">Asistencia</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" style="color: black;">
+                        <span class="menu-collapsed">Observador</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" style="color: black;">
+                        <span class="menu-collapsed">Calificaciones</span>
+                    </a>
+                </div>
+                <a href="#submenu2" data-toggle="collapse" aria-expanded="false"
+                    class="list-group-item list-group-item-action flex-column align-items-start"
+                    style="background-color: #485C8A;color: white; ">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-calculator fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Gesti&oacute;n contable</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu2' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action" style="color: black;">
+                        <span class="menu-collapsed">Estado de cartera</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" style="color: black;">
+                        <span class="menu-collapsed">Generaci&oacute;n de recibos</span>
+                    </a>
+                </div>
+
+                <a href="#submenu3" data-toggle="collapse" aria-expanded="false"
+                    class="list-group-item list-group-item-action flex-column align-items-start"
+                    style="background-color: #485C8A;color: white;">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-cog fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Administraci&oacute;n</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu3' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action" style="color: black;">
+                        <span class="menu-collapsed">Registro usuarios</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" style="color: black;">
+                        <span class="menu-collapsed">Periodos acad&eacute;micos</span>
+                    </a>
+                </div>
+                <!-- Separator without title -->
+                <li class="list-group-item sidebar-separator menu-collapsed" style="background-color: #485C8A;color: white;"></li>
+                <!-- /END Separator -->
+
+            </ul><!-- List Group END-->
+        </div><!-- sidebar-container END -->
+        <!-- MAIN -->
+        <div class="col p-4">
+            <h1 class="display-4 text-center">Generar reporte de notas</h1>
+            <br>
+            <div class="text-center">
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Generar nuevo
+                    reporte</button>
+            </div>
+            <br>
+            <div class="card">
+                <h5 class="card-header font-weight-light">Hist&oacute;rico de reportes</h5>
+                <div class="card-body">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Curso</th>
+                                <th scope="col">Grupo</th>
+                                <th scope="col">Per&iacute;odo acad&eacute;mico</th>
+                                <th scope="col">Descargar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">16/03/2021</th>
+                                <td>Primero</td>
+                                <td>1</td>
+                                <td>2021-1</td>
+                                <td>
+                                    <a href="#" aria-expanded="false" class="flex-column align-items-start">
+                                        <div class="d-flex w-100 justify-content-start align-items-center">
+                                            <span class="fa fa-file-pdf-o fa-fw mr-3"></span>
+                                            <span class="menu-collapsed">Descargar</span>
+                                        </div>
+                                    </a>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">16/03/2021</th>
+                                <td>Primero</td>
+                                <td>1</td>
+                                <td>2021-1</td>
+                                <td>
+                                    <a href="#" aria-expanded="false" class="flex-column align-items-start">
+                                        <div class="d-flex w-100 justify-content-start align-items-center">
+                                            <span class="fa fa-file-pdf-o fa-fw mr-3"></span>
+                                            <span class="menu-collapsed">Descargar</span>
+                                        </div>
+                                    </a>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">16/03/2021</th>
+                                <td>Primero</td>
+                                <td>1</td>
+                                <td>2021-1</td>
+                                <td>
+                                    <a href="#" aria-expanded="false" class="flex-column align-items-start">
+                                        <div class="d-flex w-100 justify-content-start align-items-center">
+                                            <span class="fa fa-file-pdf-o fa-fw mr-3"></span>
+                                            <span class="menu-collapsed">Descargar</span>
+                                        </div>
+                                    </a>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">16/03/2021</th>
+                                <td>Primero</td>
+                                <td>1</td>
+                                <td>2021-1</td>
+                                <td>
+                                    <a href="#" aria-expanded="false" class="flex-column align-items-start">
+                                        <div class="d-flex w-100 justify-content-start align-items-center">
+                                            <span class="fa fa-file-pdf-o fa-fw mr-3"></span>
+                                            <span class="menu-collapsed">Descargar</span>
+                                        </div>
+                                    </a>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">16/03/2021</th>
+                                <td>Primero</td>
+                                <td>1</td>
+                                <td>2021-1</td>
+                                <td>
+                                    <a href="#" aria-expanded="false" class="flex-column align-items-start">
+                                        <div class="d-flex w-100 justify-content-start align-items-center">
+                                            <span class="fa fa-file-pdf-o fa-fw mr-3"></span>
+                                            <span class="menu-collapsed">Descargar</span>
+                                        </div>
+                                    </a>
+
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div><!-- Main Col END -->
+    </div><!-- body-row END -->
+
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title" id="exampleModalLabel">Selecci&oacute;n de cursos</h5>
+                        <p> Utilice los filtros para marcar los cursos que desea incluir</p>
+
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="nivel" class="col-form-label">Nivel:</label>
+                            <select name="niveles" id="nivel">
+                                <option value="preescolar">Preescolar</option>
+                                <option value="primaria">Primaria</option>
+                                <option value="bachillerato">Bachillerato</option>
+                            </select>
+
+                            <label for="nivel" class="col-form-label">G&eacute;nero:</label>
+                            <input type="checkbox" id="generoMasculino" name="scales" checked>
+                            <label for="generoMasculino">M</label>
+
+                            <input type="checkbox" id="generoFemenino" name="scales" checked>
+                            <label for="generoFemenino">F</label>
+
+                            <label for="curso" class="col-form-label">Curso:</label>
+                            <select name="cursos" id="curso">
+                                <option value="primero">Primero</option>
+                                <option value="segundo">Segundo</option>
+                                <option value="tercero">Tercero</option>
+                                <option value="cuarto">Cuarto</option>
+                                <option value="quinto">Quinto</option>
+                                <option value="sexto">Sexto</option>
+                                <option value="septimo">S&eacute;ptimo</option>
+                                <option value="octavo">Octavo</option>
+                                <option value="noveno">Noveno</option>
+                                <option value="decimo">D&eacute;cimo</option>
+                                <option value="once">Once</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Nivel</th>
+                                        <th scope="col">G&eacute;nero</th>
+                                        <th scope="col">Curso</th>
+                                        <th scope="col">Grupo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"><input type="checkbox"></td>
+                                        <td>Primaria</td>
+                                        <td>Masculino</td>
+                                        <td>Primero</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><input type="checkbox"></td>
+                                        <td>Primaria</td>
+                                        <td>Masculino</td>
+                                        <td>Primero</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><input type="checkbox"></td>
+                                        <td>Primaria</td>
+                                        <td>Masculino</td>
+                                        <td>Primero</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><input type="checkbox"></td>
+                                        <td>Primaria</td>
+                                        <td>Masculino</td>
+                                        <td>Primero</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><input type="checkbox"></td>
+                                        <td>Primaria</td>
+                                        <td>Masculino</td>
+                                        <td>Primero</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Generar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
